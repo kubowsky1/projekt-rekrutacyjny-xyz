@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>PROCES: Analiza Kandydata - Jakub Błaszczak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div id="app-container">
+
+        <aside id="process-sidebar">
+            <div class="sidebar-header">
+                <h3>PROCES REKRUTACYJNY</h3>
+                <p>Status: W toku...</p>
+            </div>
+            <nav id="workflow-nav">
+                <ul>
+                    <li><a href="#profil" class="nav-step" id="nav-profil">
+                        <span class="step-icon">1</span>Profil Kandydata
+                    </a></li>
+                    <li><a href="#kompetencje" class="nav-step" id="nav-kompetencje">
+                        <span class="step-icon">2</span>Kluczowe Kompetencje
+                    </a></li>
+                    <li><a href="#doswiadczenie" class="nav-step" id="nav-doswiadczenie">
+                        <span class="step-icon">3</span>Doświadczenie Procesowe
+                    </a></li>
+                    <li><a href="#edukacja" class="nav-step" id="nav-edukacja">
+                        <span class="step-icon">4</span>Fundament Techniczny
+                    </a></li>
+                    <li><a href="#kontakt" class="nav-step" id="nav-kontakt">
+                        <span class="step-icon">5</span>Decyzja / Kontakt
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>CV 2.0 (Low Code Concept)</p>
+            </div>
+        </aside>
+
+        <main id="main-content">
+            
+            <section id="profil" class="content-section">
+                <header class="section-header">
+                    <h1>Jakub Błaszczak</h1>
+                    <h2>Analityk Procesów / Młodszy Deweloper Wdrożeń Low Code</h2>
+                </header>
+                <div class="section-body">
+                    <p class="summary">Technik programista i student Informatyki z praktycznym doświadczeniem w **optymalizacji i automatyzacji (BPM)**. Przekładam doświadczenie w zarządzaniu logistyką na język **analizy workflow** i wspieram je twardymi kompetencjami w zakresie **programowania komponentów (PHP/JS/SQL)**. Identyfikuję "wąskie gardła" w procesach biznesowych i posiadam techniczne know-how, aby projektować dla nich zautomatyzowane rozwiązania. Poszukuję środowiska, w którym moja **szybkość uczenia się** i **analityczne myślenie** przyczynią się do realnych wdrożeń transformacji cyfrowej.</p>
+                </div>
+            </section>
+
+            <section id="kompetencje" class="content-section">
+                <header class="section-header">
+                    <h2>Kluczowe Kompetencje dla Wdrożeniowca</h2>
+                </header>
+                <div class="section-body grid-3">
+                    
+                    <div class="card" onclick="scrollToEvidence('doswiadczenie-logistyka')">
+                        <span class="card-icon">📊</span>
+                        <h3>Analityka Procesów Biznesowych (BPM)</h3>
+                        <p>Praktyczne doświadczenie w mapowaniu procesów E2E (End-to-End). Identyfikacja nieefektywności i **optymalizacja przepływu informacji** między interesariuszami (np. Sprzedaż -> Magazyn).</p>
+                        <span class="card-link">Zobacz Dowód (Doświadczenie Logistyczne)</span>
+                    </div>
+
+                    <div class="card" onclick="scrollToEvidence('doswiadczenie-it')">
+                        <span class="card-icon">💻</span>
+                        <h3>Rozwój Komponentów Custom (PHP/JS/SQL)</h3>
+                        <p>Potwierdzone kwalifikacją **INF.03** umiejętności tworzenia logiki back-end (PHP) i dynamicznych interfejsów (JS), niezbędne do rozszerzania standardowych funkcji platform Low Code.</p>
+                        <span class="card-link">Zobacz Dowód (Doświadczenie IT / Edukacja)</span>
+                    </div>
+
+                    <div class="card" onclick="scrollToEvidence('doswiadczenie-logistyka')">
+                        <span class="card-icon">🗣️</span>
+                        <h3>Zarządzanie Interesariuszami</h3>
+                        <p>Rozwinięte umiejętności komunikacyjne (**wysoka kultura osobista**) i **elastyczność** w reagowaniu na zmieniające się wymagania biznesowe. Doświadczenie w roli łącznika między działami.</p>
+                        <span class="card-link">Zobacz Dowód (Doświadczenie Logistyczne)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="doswiadczenie" class="content-section">
+                <header class="section-header">
+                    <h2>Doświadczenie Procesowe i Techniczne</h2>
+                </header>
+                <div class="section-body timeline">
+                    
+                    <div class="timeline-item" id="doswiadczenie-logistyka">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="data">mar 2025 – obecnie</span>
+                            <h3>Analityk Przepływu Pracy (Workflow) i Optymalizacji Logistyki</h3>
+                            <p class="company">Gasker by REDLIF, Bielsko-Biała</p>
+                            <ul>
+                                <li><strong>Analiza procesu E2E:</strong> Mapowanie kompletnego przepływu zamówień hurtowych, od rejestracji w systemie po finalną wysyłkę.</li>
+                                <li><strong>Identyfikacja wąskich gardeł:</strong> Wykrycie kluczowego problemu w procesie – manualnego przepisywania danych między systemem sprzedaży a oprogramowaniem magazynowym, co generowało błędy i opóźnienia.</li>
+                                <li><strong>Projektowanie Workflow:</strong> Opracowanie koncepcji zoptymalizowanego, cyfrowego workflow opartego na walidacji danych i automatycznym przesyłaniu zadań.</li>
+                                <li><strong>Zarządzanie procesem</strong> w celu zapewnienia **maksymalnej terminowości**, co przełożyło się na redukcję błędów w zamówieniach o ok. 20%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" id="doswiadczenie-it">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="data">2021 – 2023 (Okresowo)</span>
+                            <h3>Młodszy Specjalista ds. Wdrożeń i Integracji Danych (Staż/Praktyka)</h3>
+                            <p class="company">1ADV Łukasz Kaplita / Volvox Consulting</p>
+                            <ul>
+                                <li><strong>Administracja bazami danych:</strong> Zapewnienie integralności danych i wsparcie dla kluczowych procesów biznesowych poprzez wykonywanie zapytań SQL (JOIN, UPDATE) w systemach klienckich.</li>
+                                <li><strong>Tworzenie skryptów (JS):</strong> Rozwój niestandardowych skryptów JavaScript do walidacji formularzy po stronie klienta w wewnętrznych narzędziach firmy.</li>
+                                <li><strong>Utrzymanie komponentów (PHP):</strong> Wsparcie w utrzymaniu i drobnych modyfikacjach komponentów PHP odpowiedzialnych za logikę biznesową w systemach back-end.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="edukacja" class="content-section">
+                 <header class="section-header">
+                    <h2>Fundament Techniczny i Analityczny</h2>
+                </header>
+                <div class="section-body grid-2">
+                    <div class="card-simple">
+                        <h3>Wykształcenie Akademickie i Zawodowe</h3>
+                        <p><strong>Informatyka (profil praktyczny)</strong><br>Politechnika Śląska (obecnie)</p>
+                        <p><strong>Technik Informatyk / Programista</strong><br>Zespół Szkół Technicznych (2024)</p>
+                    </div>
+                    <div class="card-simple">
+                        <h3>Kluczowe Kwalifikacje Technologiczne</h3>
+                        <p><strong>INF.03 (Fundament Programowania Komponentów)</strong><br>Potwierdzona znajomość stosu PHP, JavaScript i SQL, niezbędnego do tworzenia niestandardowych modułów i integracji w platformach Low Code.</p>
+                        <p><strong>Umiejętności Jutra AI 2.0 (Transformacja Cyfrowa i BPA)</strong><br>Kompetencje w zakresie zarządzania cyklem życia wdrożenia AI, analityki procesów (BigQuery/SQL) i Business Process Automation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt" class="content-section">
+                <header class="section-header">
+                    <h2>Proces Zakończony: Decyzja</h2>
+                </header>
+                <div class="section-body cta-section">
+                    <p>Dziękuję za analizę mojej kandydatury. Jestem gotów udowodnić moją wartość i zaangażowanie w kolejnym etapie procesu.</p>
+                    <a href="mailto:blaszczak.j16@gmail.com?subject=Zaproszenie na II etap rekrutacji (Młodszy Wdrożeniowiec Low Code)" class="cta-button">
+                        Krok 2: Zaproś na Rozmowę
+                    </a>
+                    <div class="contact-details">
+                        <p>+48 500 851 036</p>
+                        <p>blaszczak.j16@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
